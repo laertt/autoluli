@@ -34,9 +34,8 @@ export default defineConfig(({ command }) => {
         prefix: 'mgx', // Prefix used to identify source locations; do not change.
       }),
       react(),
-      atoms(),
       Sitemap({
-        hostname: 'https://atoms.template.com',
+        hostname: hostname: 'https://laertt.github.io/autoluli/',
         lastmod: getSitemapLastmod(),
         readable: true,
         generateRobotsTxt: true,
