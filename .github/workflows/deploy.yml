@@ -22,10 +22,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
-      - run: cd app/frontend && pnpm install
-      - run: cd app/frontend && pnpm run build
+      - name: Install dependencies and build
+        run: |
+          cd app/frontend
+          pnpm install
+          pnpm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
