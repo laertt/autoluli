@@ -24,11 +24,8 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
-      - working-directory: app/frontend
-        run: pnpm install
-
-      - working-directory: app/frontend
-        run: pnpm run build
+      - run: cd app/frontend && pnpm install
+      - run: cd app/frontend && pnpm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
