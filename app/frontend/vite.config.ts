@@ -35,7 +35,7 @@ export default defineConfig(({ command }) => {
       }),
       react(),
       Sitemap({
-        hostname: hostname: 'https://laertt.github.io/autoluli/',
+        hostname: 'https://laertt.github.io/autoluli/',
         lastmod: getSitemapLastmod(),
         readable: true,
         generateRobotsTxt: true,
